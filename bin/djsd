@@ -36,7 +36,7 @@ dotjs = Class.new(WEBrick::HTTPServlet::AbstractServlet) do
       paths.shift
     end
 
-    body = "// dotjs is working! //\n"
+    body = "// dotjs is working! //\n You can now start using it!"
 
     files.each do |file|
       body << File.read(file) + "\n" if File.file?(file)
